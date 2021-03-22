@@ -19,6 +19,7 @@ import { white } from "@material-ui/core/colors"
 import { Button } from "@material-ui/core"
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import socialMedia  from "../images/social-media.png";
 
 const useStyles = makeStyles({
   root: {
@@ -102,7 +103,7 @@ const Layout = ({ children }) => {
           }}
           id="footercenter"
         >
-          <footer style={{ height: "65em", overflowY: "hidden" }}>
+          <footer style={{ height: "70em", overflowY: "hidden" }}>
             <center>
               <h5
                 style={{
@@ -124,8 +125,15 @@ const Layout = ({ children }) => {
               }}
               id="footer"
             >
-              <div>
+              <div style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center"
+              }}>
                 <img src={map} id="map" />
+                <center>
+                  <img src={socialMedia} style={{ width: "10em" }} />
+                </center>
               </div>
               <div style={{ marginLeft: "3%" }}>
                 <p style={{ textAlign: "center", marginBottom: 0 }}>
